@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*
+   Style Sheet for the Layout of the Pandaisia Chocolates Home Page
+
+   @Author Josue Mosh
+   @Date 26/Dec/2018
+   @File pc_home.css
+*/
+
+/* Body Styles */
+
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 640px;
+    max-width: 960px;
+    width: 95%;
+}
+
+
+/* Body Header Styles */
+
+header > img
+{
+    display: block;
+    width: 100%;
+}
+
+header > nav.horizontalNavigation li
+{
+    width: 33.33%;
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation li
+{
+    float: left;
+    display: block;
+}
+
+nav.horizontalNavigation a
+{
+    display: block;
+    text-align: center;
+}
+
+
+/* Left Column Styles */
+
+section#leftColumn
+{
+    float: left;
+    clear: left;
+    padding: 1.5em;
+    width: 33%;
+}
+
+
+/* Right Column Styles */
+
+section#rightColumn
+{
+    width: 67%;
+    float: left;
+}
+
+section#rightColumn img
+{
+    display: block;
+    width: 100%;
+}
+
+section#rightColumn li
+{
+    width: 25%;
+}
+
+/* Footer Styles */
+
+footer
+{
+    background-color: rgb(71, 52, 29);
+    clear: left;
+}
+
+footer::after
+{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+nav.verticalNavigation
+{
+    float: left;
+    width: 22%;
+    padding-left: 3em;
+}
+
+section#contactInfo
+{
+    float: left;
+    width: 34%;
+    padding-left: 3em;
+}

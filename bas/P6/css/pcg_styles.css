@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*
+   Park City Gazette Styles
+
+   @Author Josue Mosh
+   @Date 30/Dec/2018
+   @File pcg_styles.css
+*/
+
+/* Window and Body Styles */
+
+html
+{
+    background-color: hsl(176, 33%, 20%);
+    font-size: 14px;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+
+/* Navigation Styles */
+
+nav#page
+{
+    background-color: hsl(217, 17%, 48%);
+    text-align: center;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav#content
+{
+    background-color: hsl(217, 17%, 40%);
+    padding: 20px 0;
+}
+
+
+/* List Styles */
+
+a
+{
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+nav#page a
+{
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+nav#page a:hover, nav#page a:active
+{
+    background-color: rgba(255, 255, 255, .15);
+}
+
+nav#content a
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.04em;
+}
+
+nav#content a:hover, nav#content a:active
+{
+    background-color: rgba(255, 255, 255, .15);
+}
+
+ul#job, ul#events
+{
+    margin: 20px 0;
+}
+
+ul#topics
+{
+    margin-bottom: 20px;
+}
+
+ul#contact
+{
+    margin-top: 20px;
+}
+
+
+/* HR Styles */
+
+hr
+{
+    color: white;
+}
+
+
+/* Main Styles*/
+
+main h2, main h1
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: hsl(224, 25%, 33%);
+}
+
+main h1
+{
+    margin-top: 28px;
+    font-size: 2em;
+}
+
+
+
+/* Stories Styles */
+
+main > div
+{
+    overflow: auto;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    text-align: justify;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main h2
+{
+    font-size: 1.1em;
+}
+
+main p
+{
+    padding: 5px 10px;
+    color: hsl(224, 80%, 22%);
+}
+
+div#story3, div#story1
+{
+    height: 450px;
+}
+
+div#story2, div#story4
+{
+    height: 300px;
+}
+
+
+/* Footer Styles*/
+
+footer
+{
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(210, 27%, 40%);
+    color: white;
+}
