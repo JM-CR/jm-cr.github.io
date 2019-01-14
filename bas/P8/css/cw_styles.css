@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/*
+   This file contains the screen styles used with the
+   Cauli-Wood Gallery home page
+
+   @Author Josue Mosh
+   @Date 7/Jan/2019
+   @File cw_styles.css
+*/
+
+/* Import Basic Design Styles */
+
+@import "cw_designs.css";
+
+/**
+ * General Styles for All Devices
+ */
+
+nav#bottom
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+nav#bottom ul
+{
+    -webkit-flex-basis: 150px;
+    flex-basis: 150px;
+}
+
+
+/**
+ * Mobile Styles up to 480 pixels
+ */
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        color: rgb(211, 211, 211);
+        background: rgb(51, 51, 51);
+    }
+
+    aside, article img, section#spotlight
+    {
+        display: none;
+    }
+
+    /* Navigation Styles */
+
+    nav#top ul
+    {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: wrap;
+        flex-flow: wrap;
+        font-size: 2.2em;
+    }
+
+    nav#top li
+    {
+        -webkit-flex: 1 1 130px;
+        flex: 1 1 130px;
+    }
+
+    nav#top li:first-of-type
+    {
+        background: url("../img/cw_image01.png") center center / cover no-repeat;
+    }
+
+    nav#top li:nth-of-type(2)
+    {
+        background: url("../img/cw_image02.png") center center / cover no-repeat;
+    }
+
+    nav#top li:nth-of-type(3)
+    {
+        background: url("../img/cw_image03.png") center center / cover no-repeat;
+    }
+
+    nav#top li:nth-of-type(4)
+    {
+        background: url("../img/cw_image04.png") center center / cover no-repeat;
+    }
+
+    nav#top li:nth-of-type(5)
+    {
+        background: url("../img/cw_image05.png") center center / cover no-repeat;
+    }
+
+    nav#top li:last-of-type
+    {
+        background: url("../img/cw_image06.png") center center / cover no-repeat;
+    }
+
+    /* Contact Info Styles */
+
+    p#links
+    {
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    p#links a
+    {
+        color: white;
+        background: rgb(220, 27, 27);
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
+/**
+ * Tablet and Desktop Devices: 481px or more
+ */
+@media screen and (min-width: 481px)
+{
+    body
+    {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+
+    article
+    {
+        -webkit-flex: 2 1 400px;
+        flex: 2 1 400px;
+    }
+
+    aside
+    {
+        -webkit-flex: 1 2 200px;
+        flex: 1 2 200px;
+    }
+
+    /* Navigation Styles */
+
+    nav#top ul
+    {
+        display: -webkit-flex;
+        display: flex;
+        background: rgb(51, 51, 51);
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav#top li
+    {
+        flex: 0 1 80px;
+    }
+
+    /* Contact Info Styles */
+
+    p#links
+    {
+        display: none;
+    }
+}
